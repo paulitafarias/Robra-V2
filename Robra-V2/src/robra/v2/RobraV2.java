@@ -6,6 +6,7 @@
 package robra.v2;
 
 import com.opencsv.*;
+import java.awt.EventQueue;
 import java.io.FileReader;
 //import java.io.FileWriter;
 //import java.util.ArrayList;
@@ -27,40 +28,50 @@ public class RobraV2 {
      */
     public static void main(String[] args) {
        
-        try {
-        String archCSV = "C:\\Repos\\Robra-V2\\Robra-V2\\Archivos-testing\\ISO-Codes.csv";
-        
-//        Leer de a una las filas del csv
-        try (CSVReader csvReader = new CSVReader(new FileReader(archCSV))) {
-            String[] fila = null;
-            while((fila = csvReader.readNext()) != null) {
-                System.out.println(fila[0]
-                        + " | " + fila[1]
-                        + " |  " + fila[2]);
-            }   
-        }
-//        Leer y obtener todas las filas juntas
-//        CSVReader csvReader = new CSVReader(new FileReader(archCSV));
-//        List<String[]> datos = csvReader.readAll();
-        }
-        catch (Exception ex){
-        System.out.println(ex);
-        }
-        
-//        Exporta archivo
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    Principal frame = new Principal();
+                    frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 //        try {
-//            String [] pais = {"Spain", "ES", "ESP", "724", "Yes"};
-//            String archCSV = "C:\\Repos\\Robra-V2\\Robra-V2\\Archivos-testing\\Para-crear.csv";
-//            
-//            CSVWriter writer = new CSVWriter(new FileWriter(archCSV));
-//
-//            writer.writeNext(pais);
-//
-//            writer.close();
+//        String archCSV = "C:\\Repos\\Robra-V2\\Robra-V2\\Archivos-testing\\ISO-Codes.csv";
+//        
+////        Leer de a una las filas del csv
+//        try (CSVReader csvReader = new CSVReader(new FileReader(archCSV))) {
+//            String[] fila = null;
+//            while((fila = csvReader.readNext()) != null) {
+//                System.out.println(fila[0]
+//                        + " | " + fila[1]
+//                        + " |  " + fila[2]);
+//            }   
+//        }
+////        Leer y obtener todas las filas juntas
+////        CSVReader csvReader = new CSVReader(new FileReader(archCSV));
+////        List<String[]> datos = csvReader.readAll();
 //        }
 //        catch (Exception ex){
-//            System.out.println(ex);
+//        System.out.println(ex);
 //        }
+//        
+////        Exporta archivo
+////        try {
+////            String [] pais = {"Spain", "ES", "ESP", "724", "Yes"};
+////            String archCSV = "C:\\Repos\\Robra-V2\\Robra-V2\\Archivos-testing\\Para-crear.csv";
+////            
+////            CSVWriter writer = new CSVWriter(new FileWriter(archCSV));
+////
+////            writer.writeNext(pais);
+////
+////            writer.close();
+////        }
+////        catch (Exception ex){
+////            System.out.println(ex);
+////        }
       
     }
     
