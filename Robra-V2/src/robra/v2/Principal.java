@@ -129,6 +129,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(128, 128, 131));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("ROBRA V2");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -150,6 +151,7 @@ public class Principal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        rSButtonImportar.setForeground(new java.awt.Color(102, 102, 102));
         rSButtonImportar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/importCSV.png"))); // NOI18N
         rSButtonImportar.setText("IMPORTAR ");
         rSButtonImportar.setColorBorde(null);
@@ -168,6 +170,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
+        rSButtonImpresion.setForeground(new java.awt.Color(102, 102, 102));
         rSButtonImpresion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/edit.png"))); // NOI18N
         rSButtonImpresion.setText("IMPRESION LINEA");
         rSButtonImpresion.setColorBorde(null);
@@ -186,6 +189,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
+        rSButtonTutoriales.setForeground(new java.awt.Color(102, 102, 102));
         rSButtonTutoriales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/tutorial.png"))); // NOI18N
         rSButtonTutoriales.setText("TUTORIALES");
         rSButtonTutoriales.setColorBorde(null);
@@ -204,6 +208,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
+        rSButtonHome.setForeground(new java.awt.Color(102, 102, 102));
         rSButtonHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/home.png"))); // NOI18N
         rSButtonHome.setText("PRINCIPAL");
         rSButtonHome.setColorBorde(null);
